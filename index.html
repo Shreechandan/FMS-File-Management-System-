@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/webp" href="images/railway.png" />
+		<title>East Coast Railway</title>
+		<meta name="theme-color" content="#a365ed" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<script defer type="module" src="script.js"></script>
+	</head>
+	<body>
+		<!-- Login Modal -->
+		<dialog id="loginModal">
+			<form id="loginModalContent" method="post">
+				<button id="closeModal">&times;</button>
+				<h2>Login</h2>
+				<div class="input-box">
+					<input type="text" id="username" placeholder="Username" />
+				</div>
+				<div class="input-box">
+					<input
+						type="password"
+						id="password"
+						placeholder="Password"
+					/>
+				</div>
+				<button type="submit" id="submitLogin" class="btn-small">
+					Login
+				</button>
+			</form>
+		</dialog>
+
+		<!-- Upload Folder Modal -->
+		<dialog id="addFolderModal">
+			<form id="addFolderModalContent">
+				<h2>Create New Folder</h2>
+				<label for="newFolderName">Folder Name:</label>
+				<input
+					type="text"
+					id="newFolderName"
+					name="newFolderName"
+					placeholder="Enter folder name"
+					required
+				/>
+				<button type="submit" class="btn-small">Create Folder</button>
+				<button
+					type="button"
+					id="closeAddFolderModal"
+					class="btn-small"
+				>
+					Cancel
+				</button>
+			</form>
+		</dialog>
+
+		<!-- Upload Folder Modal 2 -->
+		<dialog id="addRootFolderModal">
+			<form id="addRootFolderModalContent">
+				<h2>Create New Folder</h2>
+				<label for="newRootFolderName">Folder Name:</label>
+				<input
+					type="text"
+					id="newRootFolderName"
+					name="newRootFolderName"
+					placeholder="Enter folder name"
+					required
+				/>
+				<button type="submit" class="btn-small">Create Folder</button>
+				<button
+					type="button"
+					id="closeAddRootFolderModal"
+					class="btn-small"
+				>
+					Cancel
+				</button>
+			</form>
+		</dialog>
+
+		<!-- Upload File Modal -->
+		<dialog id="addFileModal">
+			<form id="addFileModalContent">
+				<h2>Create New File</h2>
+				<label for="newFileName">File Name:</label>
+				<input
+					type="file"
+					id="newFileName"
+					name="newFileName"
+					accept=".pdf,.doc,.docx,.txt"
+					required
+				/>
+				<button type="submit" class="btn-small">Upload File</button>
+				<button type="button" id="closeAddFileModal" class="btn-small">
+					Close
+				</button>
+			</form>
+		</dialog>
+
+		<header>
+			<div class="fst">
+				<img src="images/railway.png" alt="icon" />
+				<h1>East Coast Railway</h1>
+			</div>
+			<nav>
+				<a href="home.html">Home</a>
+				<a href="#">Categories</a>
+				<a href="aboutus.html">About us</a>
+				<button class="btn-small" id="loginButton">Log In</button>
+			</nav>
+		</header>
+
+		<div class="container">
+			<div class="sidenav" id="sidenav">
+				<!-- Sidebar for root-level directories -->
+			</div>
+			<div class="main-content">
+				<div class="heading-container">
+					<div class="heading-side">
+						<h1>Folder Contents</h1>
+						<!-- Breadcrumb -->
+						<div id="breadcrumb" class="hide-on-small-and-down">
+							<div class="nav-wrapper"></div>
+						</div>
+					</div>
+					<div class="search-side">
+						<h3>Search</h3>
+						<input
+							class="search-box"
+							type="text"
+							name="searchBox"
+							id="searchBox"
+							placeholder="Search here"
+						/>
+					</div>
+				</div>
+				<div class="btn-container">
+					<button id="addFolderButton" class="btn-small">
+						Add Folder
+					</button>
+					<button id="addFileButton" class="btn-small">
+						Upload File
+					</button>
+				</div>
+				<table class="highlight responsive-table" id="folder-table">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Actions</th>
+							<th>Created at</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Table content will be populated here -->
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<script src="dummyData.js"></script>
+	</body>
+</html>

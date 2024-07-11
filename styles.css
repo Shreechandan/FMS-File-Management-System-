@@ -1,0 +1,317 @@
+:root
+{
+	--body-color: #222;
+	--text-color: #000;
+	--secondary-color: #0c0812;
+}
+
+*
+{
+	/* outline: 1px solid green; */
+}
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: var(--navbar-height);
+	/* background-image: linear-gradient(to bottom, hsl(260, 85%, 10%) 75%, var(--body-color)); */
+	background-color: hsl(260, 85%, 10%);
+	color: var(--secondary-text-color);
+	padding-inline: var(--side-margin);
+}
+
+nav
+{
+	display: flex;
+	gap: 1.5rem;
+	justify-content: center;
+	align-items: center;
+}
+
+header a
+{
+	color: var(--secondary-text-color);
+	text-decoration: none;
+	font-size: 1.15rem;
+}
+
+header a:hover
+{
+	color: var(--accent-color);
+}
+
+.fst
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	text-transform: uppercase;
+}
+
+.fst img
+{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 35vw;
+}
+
+.login-btn
+{
+	background-color: var(--accent-color);
+	color: var(--secondary-text-color);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.container
+{
+	display: grid;
+	grid-template-columns: auto 1fr;
+}
+
+.sidenav
+{
+	background-color: var(--secondary-color);
+	min-height: calc(100svh - var(--navbar-height));
+	min-height: calc(100vh - var(--navbar-height));
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	gap: 0.5em;
+	/* justify-content: center; */
+}
+
+.sidenav-buttons
+{
+	border: none;
+	cursor: pointer;
+	color: var(--secondary-text-color);
+	padding: 1em 2em;
+	border-radius: 8px;
+	background-color: #333;
+	text-align: center;
+}
+
+.folder-active
+
+/* .sidenav button:hover */
+{
+	background-color: var(--accent-color);
+	color: var(--secondary-text-color);
+}
+
+.main-content
+{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/home.webp);
+	background-size: cover;
+	padding: 1rem;
+	color: var(--secondary-text-color);
+}
+
+.heading-container
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-wrapper
+{
+	display: flex;
+	gap: 0.25rem;
+}
+
+.search-side
+{
+	width: 30%;
+}
+
+.search-box
+{
+	border: none;
+	border-radius: 8px;
+	width: 100%;
+	padding: 0.5rem;
+}
+
+.nav-wrapper
+{
+	min-height: 2rem;
+}
+
+.nav-wrapper p:not(:first-child):before
+{
+	content: " > ";
+}
+
+.search-box:is(:focus-visible)
+{
+	outline: 2px solid var(--accent-color);
+	outline-offset: 0.125rem;
+}
+
+table
+{
+	width: 100%;
+	margin-top: 2rem;
+}
+
+th,
+td
+{
+	padding: 0.5rem;
+	text-align: left;
+	border-radius: 8px;
+}
+
+td
+{
+	background-color: hsla(0, 0%, 0%, 0.8);
+}
+
+.highlight tbody tr
+{
+	transition: background-color 250ms ease-in-out;
+}
+
+.highlight tbody tr:hover
+{
+	background-color: color-mix(in lab, var(--accent-color) 80%, transparent);
+}
+
+td:nth-child(1),
+td:nth-child(3)
+{
+	width: 30%;
+}
+
+.btn-container
+{
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.btn-small
+{
+	background-image: linear-gradient(to right, var(--accent-color), var(--accent-color-hover));
+	color: var(--secondary-text-color);
+	border: none;
+	border-radius: 8px;
+	padding: 0.75em 1.5em;
+	background-size: 200%;
+	background-position: 0% 0%;
+	transition: background-position 250ms ease-in-out;
+	cursor: pointer;
+}
+
+.btn-small:is(:hover, :focus, :focus-visible)
+{
+	background-position: 99% 99%;
+}
+
+
+#loginButton
+{
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+dialog
+{
+	position: absolute;
+	width: max(40%, 40rem);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0.125rem 2rem 0.5rem color-mix(in lab, var(--accent-color) 20%, transparent);
+	padding: 2.5rem;
+	background-color: rgba(30, 30, 30, 1);
+	backdrop-filter: blur(40px);
+	color: var(--secondary-text-color);
+}
+
+dialog::backdrop
+{
+	background-color: rgba(0, 0, 0, 0.75);
+	backdrop-filter: blur(4px);
+}
+
+dialog>form
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+}
+
+dialog>form input
+{
+	width: 100%;
+	padding: 0.75em;
+	background-color: #f1f1f1;
+	color: var(--text-color);
+	border: none;
+	border-radius: 8px;
+	outline-color: var(--secondary-text-color);
+	outline: none;
+}
+
+.input-box
+{
+	position: relative;
+	width: 100%;
+}
+
+.input-box::before
+{
+	/* content: ""; */
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 1px;
+	background-color: var(--accent-color);
+}
+
+.input-box>input:is(:focus, :focus-visible, :focus-within) .input-box::before
+{
+	opacity: 0;
+}
+
+#closeModal
+{
+	align-self: flex-end;
+	cursor: pointer;
+	border: none;
+	background: none;
+	font-size: 2rem;
+	color: inherit;
+}
+
+.action-container
+{
+	display: flex;
+	gap: 1rem;
+}
+
+.delete-btn
+{
+	background-image: none;
+	background-color: red;
+}
+
+.delete-btn:hover
+{
+	background-color: color-mix(in lab, red 80%, black);
+}
