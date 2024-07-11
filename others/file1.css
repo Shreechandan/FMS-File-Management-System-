@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #18053d;
+}
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+.login-btn {
+    background-color: #6a0dad;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main-content {
+    display: flex;
+    padding: 5px 10px 15px 20px;
+    background: url('background-image.jpg') no-repeat center center/cover;
+}
+.main-content .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 1 auto;
+    padding: 10px 10px;
+    margin: 5px 0px;
+    border-radius: 10px;
+}
+.left h3 {
+    font-weight: 500;
+}
+.main-content .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    text-align: center;
+}
+.main-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.main-content th, .main-content td {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+}
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.category {
+    background-color: #333;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 200px;
+}
+.category:hover {
+    background-color: #444;
+}
+footer {
+    background-color: #18053d;
+    padding: 15px;
+    text-align: center;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
