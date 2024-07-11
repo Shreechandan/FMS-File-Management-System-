@@ -1,0 +1,118 @@
+{
+    "root": {
+      "name": "root",
+      "type": "folder",
+      "children": [
+        {
+          "name": "documents",
+          "type": "folder",
+          "children": [
+            {
+              "name": "work",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "report.docx",
+                  "type": "file",
+                  "size": "1024 KB"
+                },
+                {
+                  "name": "presentation.pptx",
+                  "type": "file",
+                  "size": "2048 KB"
+                }
+              ]
+            },
+            {
+              "name": "personal",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "resume.docx",
+                  "type": "file",
+                  "size": "512 KB"
+                },
+                {
+                  "name": "vacation_photos",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "beach.jpg",
+                      "type": "file",
+                      "size": "800 KB"
+                    },
+                    {
+                      "name": "mountains.jpg",
+                      "type": "file",
+                      "size": "1200 KB"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "music",
+          "type": "folder",
+          "children": [
+            {
+              "name": "favorites",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "song1.mp3",
+                  "type": "file",
+                  "size": "5120 KB"
+                },
+                {
+                  "name": "song2.mp3",
+                  "type": "file",
+                  "size": "4096 KB"
+                }
+              ]
+            },
+            {
+              "name": "albums",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "artist1_album",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "track1.mp3",
+                      "type": "file",
+                      "size": "2048 KB"
+                    },
+                    {
+                      "name": "track2.mp3",
+                      "type": "file",
+                      "size": "3072 KB"
+                    }
+                  ]
+                },
+                {
+                  "name": "artist2_album",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "track1.mp3",
+                      "type": "file",
+                      "size": "4096 KB"
+                    },
+                    {
+                      "name": "track2.mp3",
+                      "type": "file",
+                      "size": "5120 KB"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

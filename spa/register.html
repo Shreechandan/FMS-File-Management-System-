@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>New Page 1</title>
+    <link rel="stylesheet" href="register.css">
+    <style>
+        .alert {
+            color: red;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="fst">
+            <img src="railway.png" alt="icon">
+            <h1>ADD FMS NAME</h1>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="#">Categories</a>
+            <a href="aboutus.html">About us</a>
+        </nav>
+    </header>
+
+    <marquee behaviour="scroll" scrollamount="8">
+        <h4>Central Railway (CR) - Headquarters: Mumbai, Maharashtra| Eastern Railway (ER) - Headquarters: Kolkata,
+            West Bengal| East Central Railway (ECR) - Headquarters: Hajipur, Bihar| East Coast Railway (ECoR) -
+            Headquarters: Bhubaneswar, Odisha| Northern Railway (NR) - Headquarters: New Delhi| North Central
+            Railway (NCR) - Headquarters: Prayagraj (Allahabad), Uttar Pradesh| North Eastern Railway (NER) -
+            Headquarters: Gorakhpur, Uttar Pradesh| Northeast Frontier Railway (NFR) - Headquarters: Maligaon,
+            Guwahati, Assam| North Western Railway (NWR) - Headquarters: Jaipur, Rajasthan| Southern Railway (SR) -
+            Headquarters: Chennai, Tamil Nadu| South Central Railway (SCR) - Headquarters: Secunderabad, Telangana|
+            South Eastern Railway (SER) - Headquarters: Kolkata, West Bengal| South East Central Railway (SECR) -
+            Headquarters: Bilaspur, Chhattisgarh| South Western Railway (SWR) - Headquarters: Hubballi (Hubli),
+            Karnataka| Western Railway (WR) - Headquarters: Mumbai, Maharashtra| West Central Railway (WCR) -
+            Headquarters: Jabalpur, Madhya Pradesh</h4>
+    </marquee>
+
+    <div class="container">
+        <form id="registerForm">
+            <h2>Register</h2>
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                <span id="nameAlert" class="alert">Name should not contain numbers.</span>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <span id="emailAlert" class="alert">Please enter a valid Gmail address.</span>
+            </div>
+            <div>
+                <label for="passwordReg">Password</label>
+                <input type="password" id="passwordReg" name="password" placeholder="Password">
+                <span id="passwordAlert" class="alert">Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character.</span>
+            </div>
+            <div>
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+                <span id="confirmPasswordAlert" class="alert">Passwords do not match.</span>
+            </div>
+            <div>
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I accept the <a href="terms.html">Terms of Use</a> & <a href="#">Privacy Policy</a>.</label>
+                <span id="termsAlert" class="alert">You must accept the terms and conditions.</span>
+            </div>
+            <button type="submit">Register Now</button>
+            <div class="center-text">
+                <p style="color:rgb(51, 51, 51);">Already have an account? <a href="login.html" id="showLoginForm">Sign in</a></p>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <a href="aboutus.html">About us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="#">Contact us</a>
+        <a href="terms.html">Terms of use</a>
+    </footer>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Reset alert messages
+            document.getElementById('nameAlert').style.display = 'none';
+            document.getElementById('emailAlert').style.display = 'none';
+            document.getElementById('passwordAlert').style.display = 'none';
+            document.getElementById('confirmPasswordAlert').style.display = 'none';
+            document.getElementById('termsAlert').style.display = 'none';
+
+            let valid = true;
+
+            // Name validation
+            const name = document.getElementById('firstName').value;
+            if (/\d/.test(name)) {
+                document.getElementById('nameAlert').style.display = 'block';
+                valid = false;
+            }
+
+            // Email validation
+            const email = document.getElementById('email').value;
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById('emailAlert').style.display = 'block';
+                valid = false;
+            }
+
+            // Password validation
+            const password = document.getElementById('passwordReg').value;
+            const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            if (!passwordPattern.test(password)) {
+                document.getElementById('passwordAlert').style.display = 'block';
+                valid = false;
+            }
+
+            // Confirm Password validation
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            if (password !== confirmPassword) {
+                document.getElementById('confirmPasswordAlert').style.display = 'block';
+                valid = false;
+            }
+
+            // Terms and Conditions validation
+            const termsAccepted = document.getElementById('terms').checked;
+            if (!termsAccepted) {
+                document.getElementById('termsAlert').style.display = 'block';
+                valid = false;
+            }
+
+            // If all validations pass, submit the form or do other processing
+            if (valid) {
+                alert('Registration successful!');
+                window.location.href = 'home.html';
+                // Optionally, you can submit the form data to the server here
+                // document.getElementById('registerForm').submit();
+            }
+        });
+    </script>
+</body>
+</html>

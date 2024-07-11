@@ -1,0 +1,167 @@
+{
+    "Railway Board": {
+        "Policy": {
+            "2024": {
+                "SUBJECT 1": {
+                    "Doc 1": "http://example.com/railwayboard/policy/2024/subject1/doc1",
+                    "Doc 2": "http://example.com/railwayboard/policy/2024/subject1/doc2"
+                },
+                "SUBJECT 2": {
+                    "Doc 1": "http://example.com/railwayboard/policy/2024/subject2/doc1"
+                }
+            },
+            "2023": {
+                "SUBJECT 1": {
+                    "Doc 1": "http://example.com/railwayboard/policy/2023/subject1/doc1"
+                }
+            }
+        },
+        "Recruitment": {
+            "2024": {
+                "POST 1": {
+                    "Doc 1": "http://example.com/railwayboard/recruitment/2024/post1/doc1"
+                }
+            }
+        }
+    },
+    "Accounts": {
+        "Policy": {
+            "2024": {
+                "SUBJECT 1": {
+                    "Doc 1": "http://example.com/accounts/policy/2024/subject1/doc1",
+                    "Doc 2": "http://example.com/accounts/policy/2024/subject1/doc2"
+                },
+                "SUBJECT 2": {
+                    "Doc 1": "http://example.com/accounts/policy/2024/subject2/doc1"
+                }
+            },
+            "2023": {
+                "SUBJECT 1": {
+                    "Doc 1": "http://example.com/accounts/policy/2023/subject1/doc1"
+                }
+            }
+        },
+        "Recruitment": {
+            "2024": {
+                "POST 1": {
+                    "Doc 1": "http://example.com/accounts/recruitment/2024/post1/doc1",
+                    "Doc 2": "http://example.com/accounts/recruitment/2024/post2/doc1"
+                }
+            }
+        }
+    },
+    "Personnel": {
+        "Policy": {
+            "2024": {
+                "SUBJECT 1": {
+                    "Doc 1": "http://example.com/personnel/policy/2024/subject1/doc1"
+                }
+            },
+            "2023": {
+                "SUBJECT 1": {
+                    "Doc 1": "http://example.com/personnel/policy/2023/subject1/doc1",
+                    "Doc 2": "http://example.com/personnel/policy/2023/subject2/doc1"
+                }
+            }
+        },
+        "Recruitment": {
+            "2024": {
+                "POST 1": {
+                    "Doc 1": "http://example.com/personnel/recruitment/2024/post1/doc1"
+                }
+            }
+        }
+    },
+    "S&T": {
+        "Policy": {
+            "2024": {
+                "SUBJECT 1": {
+                    "Doc 1": "http://example.com/sandt/policy/2024/subject1/doc1"
+                }
+            }
+        },
+        "Reports": {
+            "2024": {
+                "Report 1": {
+                    "Doc 1": "http://example.com/sandt/reports/2024/report1/doc1"
+                }
+            }
+        }
+    },
+    "RPF": {
+        "Policy": {
+            "2024": {
+                "SUBJECT 1": {
+                    "Doc 1": "http://example.com/rpf/policy/2024/subject1/doc1",
+                    "Doc 2": "http://example.com/rpf/policy/2024/subject2/doc1"
+                },
+                "2023": {
+                    "SUBJECT 1": {
+                        "Doc 1": "http://example.com/rpf/policy/2023/subject1/doc1"
+                    }
+                }
+            }
+        },
+        "Training": {
+            "2024": {
+                "Course 1": {
+                    "Doc 1": "http://example.com/rpf/training/2024/course1/doc1"
+                }
+            }
+        }
+    },
+    "COMMERCIAL": {
+        "Policy": {
+            "2024": {
+                "SUBJECT 1": {
+                    "Doc 1": "http://example.com/commercial/policy/2024/subject1/doc1"
+                }
+            }
+        },
+        "Sales": {
+            "2024": {
+                "Sale 1": {
+                    "Doc 1": "http://example.com/commercial/sales/2024/sale1/doc1"
+                }
+            }
+        }
+    },
+    "OPERATING": {
+        "Policy": {
+            "2024": {
+                "SUBJECT 1": {
+                    "Doc 1": "http://example.com/operating/policy/2024/subject1/doc1"
+                }
+            },
+            "2023": {
+                "SUBJECT 1": {
+                    "Doc 1": "http://example.com/operating/policy/2023/subject1/doc1"
+                }
+            }
+        },
+        "Procedures": {
+            "2024": {
+                "Procedure 1": {
+                    "Doc 1": "http://example.com/operating/procedures/2024/procedure1/doc1"
+                }
+            }
+        }
+    },
+    "MECHANICAL": {
+        "Policy": {
+            "2024": {
+                "SUBJECT 1": {
+                    "Doc 1": "http://example.com/mechanical/policy/2024/subject1/doc1"
+                }
+            }
+        },
+        "Maintenance": {
+            "2024": {
+                "Task 1": {
+                    "Doc 1": "http://example.com/mechanical/maintenance/2024/task1/doc1",
+                    "Doc 2": "http://example.com/mechanical/maintenance/2024/task2/doc1"
+                }
+            }
+        }
+    }
+}
