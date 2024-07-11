@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+background-color: #18053d;
+}
+
+header a {
+color: #ffffff;
+text-decoration: none;
+margin: 0 10px;
+font-size: 18px;
+}
+
+.login-btn {
+    background-color: #6a0dad;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+.main-content {
+    display: flex;
+    flex: 1;
+}
+.main-content {
+display: flex;
+padding: 5px 10px 15px 20px;
+background: url('background-image.jpg') no-repeat center center/cover;
+}
+.main-content .left {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+flex: 0 1 auto;
+padding: 0px 10px;
+border-radius: 10px;
+}
+.left h3{
+font-weight: 700;
+font-size: larger;
+}
+.categories {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+}
+.fst{
+    display: flex;
+    flex-direction: row;
+}
+.fst img {
+    width: 75px;
+    height: 75px;
+    border-radius: 35vw;
+}
+.category {
+text-decoration: none;
+color: white;
+background-color: #333;
+padding: 10px 20px;
+margin: 5px 0;
+border-radius: 10px;
+text-align: center;
+cursor: pointer;
+transition: background-color 0.3s;
+width: 200px;
+}
+.category:hover {
+background-color: #444;
+}ntent {
+    padding: 20px;
+    flex: 1;
+    background-color: #ecf0f1;
+    color: #333;
+    
+    border-collapse: collapse;
+}
+.content {
+    padding: 20px;
+    flex: 1;
+    background-color: #ecf0f1;
+}
+.content h2 {
+    color: #333;
+}
+table {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #18053d;
+    color: white;
+}
+td {
+    background-color: white;
+}
+
+
+footer {
+    background-color: #18053d;
+    padding: 15px;
+    text-align: left;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    display: flex;
+    gap: 10px;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}

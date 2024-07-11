@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="faq.css">
+    <script>
+        function toggleAnswer(event) {
+            const question = event.currentTarget;
+            const answer = question.nextElementSibling;
+            const sign = question.querySelector('.sign');
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+                sign.textContent = '+';
+            } else {
+                answer.style.display = 'block';
+                sign.textContent = '-';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="fst">
+            <img src="railway.png" alt="icon">
+        <h1>ADD FMS NAME</h1>
+    </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="#">Categories</a>
+            <a href="aboutus.html">About us</a>
+            <a href="login.html">
+                <button class="login-btn">Log In</button></a>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="faq-section">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(event)">
+                    <h3>Q1: What is ADD FMS NAME?</h3>
+                    <span class="sign">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>ADD FMS NAME is a platform that provides comprehensive solutions and services to connect, inform, and empower individuals and organizations.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(event)">
+                    <h3>Q2: How do I create an account?</h3>
+                    <span class="sign">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can create an account by clicking the "Log In" button on the top right corner and then selecting the "Sign Up" option.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(event)">
+                    <h3>Q3: How can I contact customer support?</h3>
+                    <span class="sign">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can contact our customer support through the "Contact us" link in the footer of the page.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(event)">
+                    <h3>Q4: Can I contribute to the platform?</h3>
+                    <span class="sign">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we welcome contributions from our community. Please contact us for more details on how you can contribute.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(event)">
+                    <h3>Q5: Where can I find more information about your services?</h3>
+                    <span class="sign">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>More information about our services can be found on the "About us" page and by exploring the "Categories" section.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="aboutus.html">About us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="#">Contact us</a>
+        <a href="terms.html">Terms of use</a>
+    </footer>
+</body>
+</html>

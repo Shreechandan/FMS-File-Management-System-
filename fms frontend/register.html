@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>New Page 1</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <header>
+        <div class="fst">
+            <img src="railway.png" alt="icon">
+        <h1>ADD FMS NAME</h1>
+    </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="#">Categories</a>
+            <a href="aboutus.html">About us</a>
+        </nav>
+    </header>
+
+    <marquee behaviour="scroll" scrollamount="8">
+        <h4>Central Railway (CR) - Headquarters: Mumbai, Maharashtra| Eastern Railway (ER) - Headquarters: Kolkata,
+            West Bengal| East Central Railway (ECR) - Headquarters: Hajipur, Bihar| East Coast Railway (ECoR) -
+            Headquarters: Bhubaneswar, Odisha| Northern Railway (NR) - Headquarters: New Delhi| North Central
+            Railway (NCR) - Headquarters: Prayagraj (Allahabad), Uttar Pradesh| North Eastern Railway (NER) -
+            Headquarters: Gorakhpur, Uttar Pradesh| Northeast Frontier Railway (NFR) - Headquarters: Maligaon,
+            Guwahati, Assam| North Western Railway (NWR) - Headquarters: Jaipur, Rajasthan| Southern Railway (SR) -
+            Headquarters: Chennai, Tamil Nadu| South Central Railway (SCR) - Headquarters: Secunderabad, Telangana|
+            South Eastern Railway (SER) - Headquarters: Kolkata, West Bengal| South East Central Railway (SECR) -
+            Headquarters: Bilaspur, Chhattisgarh| South Western Railway (SWR) - Headquarters: Hubballi (Hubli),
+            Karnataka| Western Railway (WR) - Headquarters: Mumbai, Maharashtra| West Central Railway (WCR) -
+            Headquarters: Jabalpur, Madhya Pradesh</h4>
+    </marquee>
+
+    <div class="container">
+        <form id="registerForm">
+            <h2>Register</h2>
+          
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                </div>
+            <div>
+				<label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <div>
+                <label for="passwordReg">Password</label>
+                <input type="password" id="passwordReg" name="password" placeholder="Password">
+            </div>
+            <div>
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password">
+            </div>
+            <div>
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">I accept the <a href="terms.html">Terms of Use</a> & <a href="#">Privacy Policy</a>.</label> 
+            </div>
+            <button type="submit">Register Now</button>
+            <div class="center-text">
+                <p style="color:rgb(51, 51, 51);">Already have an account? <a href="login.html" id="showLoginForm">Sign in</a></p>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <a href="aboutus.html">About us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="#">Contact us</a>
+        <a href="terms.html">Terms of use</a>
+    </footer>
+
+    <script>
+        document.getElementById('showRegisterForm').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('loginForm').style.display = 'none';
+            document.getElementById('registerForm').style.display = 'block';
+        });
+        document.getElementById('showLoginForm').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.getElementById('registerForm').style.display = 'none';
+            document.getElementById('loginForm').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
